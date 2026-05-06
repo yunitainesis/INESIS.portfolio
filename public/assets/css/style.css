@@ -1,0 +1,81 @@
+/* =========================================
+   BAGIAN 1: PENGATURAN DASAR (BASE)
+   ========================================= */
+/* Clean, flat minimalist aesthetic */
+body {
+    background-color: var(--color-brand-tukucream);
+}
+
+/* =========================================
+   BAGIAN 2: KOMPONEN KARTU (CARDS)
+   ========================================= */
+/* Softer minimalist card */
+.portfolio-card {
+    border: 1px solid var(--color-brand-latte);
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px -5px rgba(44, 30, 22, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -5px rgba(44, 30, 22, 0.1);
+}
+/* =========================================
+   BAGIAN 3: KOMPONEN TOMBOL (BUTTONS)
+   ========================================= */
+.portfolio-btn {
+    background-color: var(--color-brand-espresso);
+    color: var(--color-brand-ivory);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px 0 rgba(44, 30, 22, 0.2);
+}
+
+.portfolio-btn:hover {
+    background-color: var(--color-brand-terracotta);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(193, 92, 61, 0.3);
+}
+
+/* =========================================
+   BAGIAN 4: KOMPONEN BADGE (LABEL KECIL)
+   ========================================= */
+.portfolio-badge {
+    background-color: var(--color-brand-ivory);
+    border: 1px solid var(--color-brand-latte);
+    box-shadow: 0 4px 6px -1px rgba(44, 30, 22, 0.05);
+}
+
+/* =========================================
+   BAGIAN 5: ANIMASI BENTUK BLOB (HERO IMAGE)
+   ========================================= */
+/* Blob Shape */
+.blob-shape {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: blob 8s ease-in-out infinite alternate;
+}
+
+@keyframes blob {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+/* =========================================
+   BAGIAN 6: PENGATURAN TRANSISI GLOBAL
+   ========================================= */
+/* Transisi halus untuk semua elemen */
+* {
+    transition-property: background-color, color, transform, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}

@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source "../**/*.blade.php";
+@source "../**/*.js";
+@source "../**/*.vue";
+
+@theme {
+    --color-brand-tukucream: #F4F1EA;
+    --color-brand-ivory: #FFFFFF;
+    --color-brand-espresso: #2C1E16;
+    --color-brand-mocha: #5C4033;
+    --color-brand-latte: #D4C4B7;
+    --color-brand-terracotta: #C15C3D;
+
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+}
