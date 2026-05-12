@@ -435,7 +435,7 @@
                 <span class="text-3xl font-serif font-bold tracking-tight italic text-brand-espresso group-hover:text-brand-terracotta transition-colors">Inesis<span class="text-brand-terracotta">.</span></span>
                 <span class="text-[10px] font-sans font-bold tracking-[0.2em] uppercase text-brand-mocha mt-1 ml-6">Portfolio</span>
             </a>
-            <p class="text-sm text-brand-mocha font-medium">&copy; 2026 Yunita Inesis. Crafted with Laravel & Tailwind CSS.</p>
+            <p class="text-sm text-brand-mocha font-medium">&copy; 2026 Yunita Inesis. Crafted with Laravel & CSS.</p>
         </div>
     </footer>
 
