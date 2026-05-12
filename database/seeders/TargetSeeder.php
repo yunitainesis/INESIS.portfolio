@@ -12,6 +12,8 @@ class TargetSeeder extends Seeder
      */
     public function run(): void
     {
+        \App\Models\Target::truncate();
+
         \App\Models\Target::create([
             'title' => 'Counter Bookkeeping & BRILink',
             'description' => 'Developing a dedicated web application to streamline daily financial records and transactions for retail counters and BRILink agents.',

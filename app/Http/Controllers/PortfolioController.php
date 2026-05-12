@@ -50,8 +50,8 @@ class PortfolioController extends Controller
         // =================================================================
         $skills = Skill::all();
         $projects = Project::all();
-        $experiences = Experience::orderBy('year', 'desc')->get();
-        $targets = Target::all();
+        $experiences = Experience::orderBy('year', 'desc')->get()->unique('title');
+        $targets = Target::all()->unique('title');
         
         // =================================================================
         // MENAMPILKAN VIEW (TAMPILAN)

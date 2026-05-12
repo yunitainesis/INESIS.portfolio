@@ -12,6 +12,8 @@ class ExperienceSeeder extends Seeder
      */
     public function run(): void
     {
+        \App\Models\Experience::truncate();
+
         \App\Models\Experience::create([
             'title' => 'HIMAPROTEKSA',
             'role' => 'General Treasurer',
