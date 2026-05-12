@@ -34,7 +34,7 @@
                     <a href="#" class="flex items-center gap-3 group">
                         <div class="relative">
                             <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-terracotta/30 group-hover:border-brand-terracotta transition-all duration-500 shadow-md group-hover:shadow-brand-terracotta/20 relative z-10">
-                                <img src="{{ asset('assets/img/1.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-700">
+                                <img src="{{ asset('assets/img/icon.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-700">
                             </div>
                             <div class="absolute inset-0 bg-brand-terracotta/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
