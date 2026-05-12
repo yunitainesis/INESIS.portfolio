@@ -31,13 +31,16 @@
         <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="flex items-center gap-4 group">
-                        <div class="w-11 h-11 rounded-full overflow-hidden border-2 border-brand-terracotta/20 group-hover:border-brand-terracotta transition-all duration-500 shadow-sm">
-                            <img src="{{ asset('assets/img/1.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover">
+                    <a href="#" class="flex items-center gap-3 group">
+                        <div class="relative">
+                            <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-terracotta/30 group-hover:border-brand-terracotta transition-all duration-500 shadow-md group-hover:shadow-brand-terracotta/20 relative z-10">
+                                <img src="{{ asset('assets/img/1.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-700">
+                            </div>
+                            <div class="absolute inset-0 bg-brand-terracotta/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
                         <div class="flex flex-col items-start leading-none">
-                            <span class="text-2xl font-serif font-bold tracking-tight italic text-brand-espresso group-hover:text-brand-terracotta transition-colors">Inesis<span class="text-brand-terracotta">.</span></span>
-                            <span class="text-[9px] font-sans font-bold tracking-[0.2em] uppercase text-brand-mocha mt-1 ml-4">Portfolio</span>
+                            <span class="text-xl font-serif font-bold tracking-tight text-brand-espresso group-hover:text-brand-terracotta transition-colors">Inesis<span class="text-brand-terracotta">.</span></span>
+                            <span class="text-[8px] font-sans font-bold tracking-[0.3em] uppercase text-brand-mocha opacity-70">Profile</span>
                         </div>
                     </a>
                 </div>
@@ -468,9 +471,14 @@
     <!-- Footer -->
     <footer class="py-10 border-t border-brand-latte/30 bg-white/50 backdrop-blur-md text-center">
         <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
-            <a href="#" class="flex flex-col items-start leading-none mb-6 group">
-                <span class="text-3xl font-serif font-bold tracking-tight italic text-brand-espresso group-hover:text-brand-terracotta transition-colors">Inesis<span class="text-brand-terracotta">.</span></span>
-                <span class="text-[10px] font-sans font-bold tracking-[0.2em] uppercase text-brand-mocha mt-1 ml-6">Portfolio</span>
+            <a href="#" class="flex items-center gap-4 mb-6 group">
+                <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-terracotta/20 group-hover:border-brand-terracotta transition-all duration-500">
+                    <img src="{{ asset('assets/img/1.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                </div>
+                <div class="flex flex-col items-start leading-none">
+                    <span class="text-2xl font-serif font-bold tracking-tight italic text-brand-espresso group-hover:text-brand-terracotta transition-colors">Inesis<span class="text-brand-terracotta">.</span></span>
+                    <span class="text-[9px] font-sans font-bold tracking-[0.2em] uppercase text-brand-mocha mt-1">Profile</span>
+                </div>
             </a>
             <p class="text-sm text-brand-mocha font-medium">&copy; 2026 Yunita Inesis. Crafted with Laravel & CSS.</p>
         </div>
