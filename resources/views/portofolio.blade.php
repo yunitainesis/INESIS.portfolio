@@ -31,12 +31,17 @@
         <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="flex flex-col items-start leading-none group">
-                        <span class="text-3xl font-serif font-bold tracking-tight italic text-brand-espresso group-hover:text-brand-terracotta transition-colors">Inesis<span class="text-brand-terracotta">.</span></span>
-                        <span class="text-[10px] font-sans font-bold tracking-[0.2em] uppercase text-brand-mocha mt-1 ml-6">Portfolio</span>
+                    <a href="#" class="flex items-center gap-4 group">
+                        <div class="w-11 h-11 rounded-full overflow-hidden border-2 border-brand-terracotta/20 group-hover:border-brand-terracotta transition-all duration-500 shadow-sm">
+                            <img src="{{ asset('assets/img/1.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-start leading-none">
+                            <span class="text-2xl font-serif font-bold tracking-tight italic text-brand-espresso group-hover:text-brand-terracotta transition-colors">Inesis<span class="text-brand-terracotta">.</span></span>
+                            <span class="text-[9px] font-sans font-bold tracking-[0.2em] uppercase text-brand-mocha mt-1 ml-4">Portfolio</span>
+                        </div>
                     </a>
                 </div>
-                <!-- Nav Links: About, Academic Profile, Education, Skills, Projects, Experience, Targets, Contact -->
+                <!-- Nav Links: Desktop -->
                 <div class="hidden xl:flex space-x-6">
                     <a href="#home" class="nav-link text-sm font-medium hover:text-brand-terracotta transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-terracotta after:transition-all hover:after:w-full">About</a>
                     <a href="#academic" class="nav-link text-sm font-medium hover:text-brand-terracotta transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-terracotta after:transition-all hover:after:w-full">Academic Profile</a>
@@ -49,6 +54,38 @@
                 </div>
                 <div class="hidden xl:flex">
                     <a href="#contact" class="portfolio-btn px-6 py-2.5 rounded-full text-sm">Contact Me</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="xl:hidden flex items-center p-2 text-brand-espresso hover:text-brand-terracotta transition-colors z-[60]">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" class="block" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 z-50 bg-brand-tukucream/98 backdrop-blur-xl translate-x-full transition-transform duration-500 ease-in-out xl:hidden flex flex-col">
+            <div class="flex flex-col items-center justify-center h-full gap-8 px-6 text-center overflow-y-auto pt-24 pb-12">
+                <a href="#home" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">About</a>
+                <a href="#academic" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Academic Profile</a>
+                <a href="#education" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Education</a>
+                <a href="#skills" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Skills</a>
+                <a href="#projects" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Projects</a>
+                <a href="#experience" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Experience</a>
+                <a href="#certificates" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Certificates</a>
+                <a href="#targets" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Targets</a>
+                <a href="#contact" class="portfolio-btn px-10 py-4 rounded-full text-lg mt-4">Contact Me</a>
+
+                <div class="mt-8 flex gap-6">
+                    <a href="https://github.com/yunitainesis" class="text-brand-espresso hover:text-brand-terracotta transition-colors">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+                    </a>
+                    <a href="mailto:yunitaines5@gmail.com" class="text-brand-espresso hover:text-brand-terracotta transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -105,13 +142,13 @@
                         </div>
 
                         <!-- Floating Badge -->
-                        <div class="portfolio-badge absolute bottom-4 -left-4 lg:bottom-10 lg:-left-10 z-20 px-6 py-4 rounded-3xl flex items-center gap-4 hover:-translate-y-2 transition-transform duration-500 backdrop-blur-md bg-white/90">
-                            <div class="w-12 h-12 rounded-full border border-brand-latte flex items-center justify-center text-brand-terracotta bg-brand-tukucream shadow-sm">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" /></svg>
+                        <div class="portfolio-badge absolute bottom-4 -left-2 sm:-left-4 lg:bottom-10 lg:-left-10 z-20 px-5 py-3 sm:px-6 sm:py-4 rounded-2xl sm:rounded-3xl flex items-center gap-3 sm:gap-4 hover:-translate-y-2 transition-transform duration-500 backdrop-blur-md bg-white/90">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-brand-latte flex items-center justify-center text-brand-terracotta bg-brand-tukucream shadow-sm">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" /></svg>
                             </div>
                             <div>
-                                <p class="text-xs text-brand-mocha font-bold uppercase tracking-wider">Status</p>
-                                <p class="text-sm lg:text-base text-brand-espresso font-bold">4th Semester Student</p>
+                                <p class="text-[10px] sm:text-xs text-brand-mocha font-bold uppercase tracking-wider">Status</p>
+                                <p class="text-xs sm:text-sm lg:text-base text-brand-espresso font-bold">4th Semester Student</p>
                             </div>
                         </div>
                     </div>
@@ -142,50 +179,50 @@
                 <!-- Bento Grid Layout -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
                     <!-- Full Name -->
-                    <div class="portfolio-card p-8 lg:col-span-2 flex flex-col justify-between bg-brand-tukucream relative overflow-hidden group border-none shadow-sm">
+                    <div class="portfolio-card p-6 sm:p-8 lg:col-span-2 flex flex-col justify-between bg-brand-tukucream relative overflow-hidden group border-none shadow-sm">
                         <div class="absolute right-[-10%] top-[-20%] w-64 h-64 bg-brand-latte/20 rounded-full blur-3xl group-hover:scale-110 transition-transform duration-700"></div>
                         <div class="relative z-10">
                             <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 text-brand-espresso group-hover:-translate-y-1 transition-transform border border-brand-latte/30">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                             </div>
                             <h3 class="text-xs uppercase tracking-[0.2em] text-brand-mocha font-bold mb-2">Full Name</h3>
-                            <p class="text-3xl md:text-4xl font-serif font-bold text-brand-espresso">Yunita Inesis Putri Cahyani</p>
+                            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-brand-espresso">Yunita Inesis Putri Cahyani</p>
                         </div>
                     </div>
 
                     <!-- GPA -->
-                    <div class="portfolio-card p-8 bg-brand-terracotta text-white border-none flex flex-col justify-center items-center text-center relative overflow-hidden group shadow-lg shadow-brand-terracotta/20">
+                    <div class="portfolio-card p-6 sm:p-8 bg-brand-terracotta text-white border-none flex flex-col justify-center items-center text-center relative overflow-hidden group shadow-lg shadow-brand-terracotta/20">
                         <svg class="absolute -right-4 -top-4 w-32 h-32 text-white/10 group-hover:rotate-90 transition-transform duration-1000" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
                         </svg>
                         <h3 class="text-xs uppercase tracking-[0.2em] text-white/80 font-bold mb-2 relative z-10">IPK/GPA</h3>
-                        <p class="text-6xl font-serif font-bold relative z-10 drop-shadow-sm">3.8</p>
+                        <p class="text-5xl sm:text-6xl font-serif font-bold relative z-10 drop-shadow-sm">3.8</p>
                         <p class="text-sm font-medium mt-2 text-white/90 relative z-10">Semester 3</p>
                     </div>
 
                     <!-- Semester & Major -->
-                    <div class="portfolio-card p-8 bg-white border-none shadow-sm flex flex-col justify-between group">
+                    <div class="portfolio-card p-6 sm:p-8 bg-white border-none shadow-sm flex flex-col justify-between group">
                         <div class="flex justify-between items-start mb-6">
                             <div class="w-12 h-12 rounded-2xl bg-brand-tukucream flex items-center justify-center text-brand-espresso group-hover:-translate-y-1 transition-transform border border-brand-latte/30">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
                             </div>
-                            <span class="text-3xl font-serif font-bold text-brand-terracotta">Sem. 4</span>
+                            <span class="text-2xl sm:text-3xl font-serif font-bold text-brand-terracotta">Sem. 4</span>
                         </div>
                         <div>
                             <h3 class="text-xs uppercase tracking-[0.2em] text-brand-mocha font-bold mb-2">Study Program</h3>
-                            <p class="text-xl font-bold text-brand-espresso leading-snug">Software Engineering Technology</p>
+                            <p class="text-lg sm:text-xl font-bold text-brand-espresso leading-snug">Software Engineering Technology</p>
                         </div>
                     </div>
 
                     <!-- Institution -->
-                    <div class="portfolio-card p-8 lg:col-span-2 bg-brand-latte/20 border-none shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group">
+                    <div class="portfolio-card p-6 sm:p-8 lg:col-span-2 bg-brand-latte/20 border-none shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6 group">
                         <div class="flex items-start gap-6">
                             <div class="w-16 h-16 rounded-3xl bg-white flex items-center justify-center text-brand-espresso shadow-sm shrink-0 group-hover:-translate-y-1 transition-transform border border-brand-latte/30">
                                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                             </div>
                             <div>
                                 <h3 class="text-xs uppercase tracking-[0.2em] text-brand-mocha font-bold mb-2">Educational Institution</h3>
-                                <p class="text-2xl md:text-3xl font-serif font-bold text-brand-espresso">Politeknik Indonusa Surakarta</p>
+                                <p class="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-brand-espresso">Politeknik Indonusa Surakarta</p>
                                 <p class="text-brand-terracotta font-semibold mt-1">Surakarta, Indonesia</p>
                             </div>
                         </div>
@@ -439,7 +476,7 @@
         </div>
     </footer>
 
-    <!-- Slider & ScrollSpy Logic -->
+    <!-- Slider & ScrollSpy & Mobile Menu Logic -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Slider Logic
@@ -453,6 +490,31 @@
                     track.style.transform = `translateX(-${currentSlide * 100}%)`;
                 }, 3000);
             }
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            const toggleMenu = () => {
+                const isOpen = !mobileMenu.classList.contains('translate-x-full');
+                if (isOpen) {
+                    mobileMenu.classList.add('translate-x-full');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    document.body.style.overflow = '';
+                } else {
+                    mobileMenu.classList.remove('translate-x-full');
+                    menuIcon.classList.add('hidden');
+                    closeIcon.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            };
+
+            mobileMenuBtn?.addEventListener('click', toggleMenu);
+            mobileNavLinks.forEach(link => link.addEventListener('click', toggleMenu));
 
             // ScrollSpy Logic
             const sections = document.querySelectorAll('section');
