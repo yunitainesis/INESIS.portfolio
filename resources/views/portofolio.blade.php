@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inesis Portfolio</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('assets/img/1.jpeg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ asset('assets/img/icon.jpeg') }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
                     <a href="#" class="flex items-center gap-3 group">
                         <div class="relative">
                             <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-terracotta/30 group-hover:border-brand-terracotta transition-all duration-500 shadow-md group-hover:shadow-brand-terracotta/20 relative z-10">
-                                <img src="{{ asset('assets/img/1.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-700">
+                                <img src="{{ asset('assets/img/icon.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-700">
                             </div>
                             <div class="absolute inset-0 bg-brand-terracotta/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
@@ -136,7 +136,7 @@
                             <!-- Slider Track -->
                             <div id="hero-slider-track" class="flex w-full h-full transition-transform duration-1000 ease-in-out">
                                 <!-- Slide 1 -->
-                                <img src="assets/img/1.jpeg" alt="foto 1" class="w-full h-full object-cover shrink-0">
+                                <img src="{{ asset('assets/img/icon.jpeg') }}" alt="foto 1" class="w-full h-full object-cover shrink-0">
                                 <!-- Slide 2 -->
                                 <img src="assets/img/2.jpeg" alt="foto 2" class="w-full h-full object-cover shrink-0">
                                 <!-- Slide 3 -->
@@ -473,7 +473,7 @@
         <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
             <a href="#" class="flex items-center gap-4 mb-6 group">
                 <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-terracotta/20 group-hover:border-brand-terracotta transition-all duration-500">
-                    <img src="{{ asset('assets/img/1.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                    <img src="{{ asset('assets/img/icon.jpeg') }}" alt="Yunita Inesis" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
                 </div>
                 <div class="flex flex-col items-start leading-none">
                     <span class="text-2xl font-serif font-bold tracking-tight italic text-brand-espresso group-hover:text-brand-terracotta transition-colors">Inesis<span class="text-brand-terracotta">.</span></span>
