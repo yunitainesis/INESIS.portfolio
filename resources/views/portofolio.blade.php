@@ -163,7 +163,7 @@
         <section id="about" class="py-24 relative">
             <div class="max-w-4xl mx-auto px-6 sm:px-12 text-center">
                 <h3 class="text-3xl md:text-5xl font-serif font-bold text-brand-espresso leading-tight mb-8">
-                    "I believe in blending <span class="italic text-brand-terracotta">aesthetic design</span> with robust engineering to create meaningful digital experiences."
+                    \"I believe in blending <span class="italic text-brand-terracotta">aesthetic design</span> with robust engineering to create meaningful digital experiences.\"
                 </h3>
                 <p class="text-brand-mocha text-lg leading-relaxed max-w-3xl mx-auto">
                     Currently pursuing my studies in Software Engineering Technology, I enjoy tackling complex problems and transforming them into simple, beautiful, and intuitive interfaces. My journey involves continuous learning, exploring new frameworks, and contributing to projects that challenge my current skill set.
@@ -361,7 +361,7 @@
                     <!-- Certificate 1: Peserta Workshop -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group">
                         <div class="relative h-64 bg-brand-latte/20 overflow-hidden">
-                            <!-- PDF Preview via Iframe (Best effort for "foto" feel with PDF) -->
+                            <!-- PDF Preview via Iframe (Best effort for \"foto\" feel with PDF) -->
                             <iframe src="{{ asset('assets/img/peserta_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0') }}" class="w-full h-full border-none" loading="lazy"></iframe>
                         </div>
                         <div class="p-8">
