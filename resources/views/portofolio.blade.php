@@ -357,7 +357,7 @@
                     <p class="text-brand-mocha font-medium">Recognition and participation in professional development.</p>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <!-- Certificate 1: Peserta Workshop -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group">
                         <div class="relative h-64 bg-brand-latte/20 overflow-hidden">
@@ -397,6 +397,32 @@
                                 Recognition for contribution and leadership as part of the organizing committee for technical workshops.
                             </p>
                             <a href="{{ asset('assets/img/panitia_workshop.pdf') }}" target="_blank" class="inline-flex items-center text-brand-terracotta font-bold text-sm hover:gap-2 transition-all">
+                                Open Document <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: Seminar AI USAHID -->
+                    <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group">
+                        <div class="relative h-64 bg-brand-latte/20 overflow-hidden">
+                            <!-- PDF Preview via Iframe -->
+                            <iframe src="{{ asset('assets/img/seminar AI USAHID.pdf#toolbar=0&navpanes=0&scrollbar=0') }}" class="w-full h-full border-none" loading="lazy"></iframe>
+                        </div>
+                        <div class="p-8">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-xl bg-brand-terracotta/20 flex items-center justify-center text-brand-espresso">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                                        <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z" />
+                                        <path d="m19 17 1 2.5 2.5.5-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold font-serif text-brand-espresso">AI Seminar Participant</h3>
+                            </div>
+                            <p class="text-brand-mocha text-sm leading-relaxed mb-6">
+                                Participation certificate for the Artificial Intelligence Seminar hosted by Universitas Sahid (USAHID), recognizing knowledge acquired in AI technology.
+                            </p>
+                            <a href="{{ asset('assets/img/seminar AI USAHID.pdf') }}" target="_blank" class="inline-flex items-center text-brand-terracotta font-bold text-sm hover:gap-2 transition-all">
                                 Open Document <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </a>
                         </div>
