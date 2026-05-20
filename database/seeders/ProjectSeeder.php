@@ -44,5 +44,15 @@ class ProjectSeeder extends Seeder
             'image_url' => 'assets/img/project_henna.png',
             'github_link' => 'https://github.com/yunitainesis/hestii_henna',
         ]);
+
+        // Project 4
+        Project::create([
+            'title' => 'Jimpitan Desa',
+            'description' => 'A community-focused web application designed to digitize and manage the traditional \'Jimpitan\' (community savings and mutual aid) system for rural villages, enhancing financial transparency and administrative efficiency.',
+            'category' => 'Web App',
+            'tech_stack' => 'Laravel',
+            'image_url' => 'assets/img/project_jimpitan.png',
+            'github_link' => 'https://github.com/yunitainesis/Jimpitan-desa',
+        ]);
     }
 }
