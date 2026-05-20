@@ -361,8 +361,8 @@
                     <!-- Certificate 1: Peserta Workshop -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group">
                         <div class="relative h-64 bg-brand-latte/20 overflow-hidden">
-                            <!-- PDF Preview via Iframe (Best effort for \"foto\" feel with PDF) -->
-                            <iframe src="{{ asset('assets/img/peserta_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0') }}" class="w-full h-full border-none" loading="lazy"></iframe>
+                            <!-- PDF Preview via Iframe -->
+                            <iframe src="{{ asset('assets/img/peserta_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
                         </div>
                         <div class="p-8">
                             <div class="flex items-center gap-3 mb-4">
@@ -384,7 +384,7 @@
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group">
                         <div class="relative h-64 bg-brand-latte/20 overflow-hidden">
                             <!-- PDF Preview via Iframe -->
-                            <iframe src="{{ asset('assets/img/panitia_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0') }}" class="w-full h-full border-none" loading="lazy"></iframe>
+                            <iframe src="{{ asset('assets/img/panitia_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
                         </div>
                         <div class="p-8">
                             <div class="flex items-center gap-3 mb-4">
@@ -406,7 +406,7 @@
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group">
                         <div class="relative h-64 bg-brand-latte/20 overflow-hidden">
                             <!-- PDF Preview via Iframe -->
-                            <iframe src="{{ asset('assets/img/seminar AI USAHID.pdf#toolbar=0&navpanes=0&scrollbar=0') }}" class="w-full h-full border-none" loading="lazy"></iframe>
+                            <iframe src="{{ asset('assets/img/seminar AI USAHID.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
                         </div>
                         <div class="p-8">
                             <div class="flex items-center gap-3 mb-4">
