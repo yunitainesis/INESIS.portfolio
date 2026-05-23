@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Inesis Portfolio</title>
-    <link rel="icon" type="image/jpeg" href="{{ asset('assets/img/icon.jpeg') }}?v=1.0">
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/icon.png') }}?v=1.0">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
