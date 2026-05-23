@@ -4,6 +4,7 @@ nixPkgs = ["..."]
 [phases.install]
 cmds = [
     "composer install --no-dev --optimize-autoloader",
+    "rm -rf node_modules",
     "npm install",
     "npm run build"
 ]
