@@ -96,7 +96,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="relative pt-24 pb-8 sm:pt-28 sm:pb-12 lg:pt-32 lg:pb-16 flex items-center min-h-[65vh] scroll-mt-20">
+        <section id="home" class="relative pt-20 pb-8 sm:pt-24 sm:pb-12 lg:pt-28 lg:pb-16 flex items-center scroll-mt-20">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 flex flex-row items-center gap-4 sm:gap-12 lg:gap-16 relative z-10 w-full">
                 <div class="w-[55%] lg:w-1/2 flex flex-col items-start text-left">
                     <div class="inline-flex items-center gap-1.5 mb-4 sm:mb-8 text-brand-terracotta">
@@ -160,9 +160,9 @@
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="py-8 sm:py-12 lg:py-16 relative scroll-mt-20">
+        <section id="about" class="py-6 sm:py-10 lg:py-12 relative scroll-mt-20">
             <div class="max-w-4xl mx-auto px-6 sm:px-12 text-center">
-                <h3 class="text-xl sm:text-3xl md:text-5xl font-serif font-bold text-brand-espresso leading-tight mb-8">
+                <h3 class="text-xl sm:text-3xl md:text-5xl font-serif font-bold text-brand-espresso leading-tight mb-4">
                     \"I believe in blending <span class="italic text-brand-terracotta">aesthetic design</span> with robust engineering to create meaningful digital experiences.\"
                 </h3>
                 <p class="text-brand-mocha text-lg leading-relaxed max-w-3xl mx-auto">
