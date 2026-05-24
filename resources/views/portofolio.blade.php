@@ -96,7 +96,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="relative pt-20 pb-8 sm:pt-28 sm:pb-20 lg:pt-40 lg:pb-32 flex items-center min-h-[80vh]">
+        <section id="home" class="relative pt-24 pb-8 sm:pt-28 sm:pb-12 lg:pt-32 lg:pb-16 flex items-center min-h-[65vh] scroll-mt-20">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 flex flex-row items-center gap-4 sm:gap-12 lg:gap-16 relative z-10 w-full">
                 <div class="w-[55%] lg:w-1/2 flex flex-col items-start text-left">
                     <div class="inline-flex items-center gap-1.5 mb-4 sm:mb-8 text-brand-terracotta">
@@ -160,7 +160,7 @@
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="py-8 sm:py-20 lg:py-24 relative">
+        <section id="about" class="py-8 sm:py-12 lg:py-16 relative scroll-mt-20">
             <div class="max-w-4xl mx-auto px-6 sm:px-12 text-center">
                 <h3 class="text-xl sm:text-3xl md:text-5xl font-serif font-bold text-brand-espresso leading-tight mb-8">
                     \"I believe in blending <span class="italic text-brand-terracotta">aesthetic design</span> with robust engineering to create meaningful digital experiences.\"
@@ -172,7 +172,7 @@
         </section>
 
         <!-- Academic Profile -->
-        <section id="academic" class="py-8 sm:py-20 lg:py-24 relative bg-white/50 backdrop-blur-sm border-y border-brand-latte/30">
+        <section id="academic" class="py-8 sm:py-12 lg:py-16 relative bg-white/50 backdrop-blur-sm border-y border-brand-latte/30 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
                 <div class="mb-6 sm:mb-16 text-center lg:text-left">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4"><span class="italic text-brand-terracotta">Academic</span> Profile.</h2>
@@ -235,7 +235,7 @@
         </section>
 
         <!-- Education History -->
-        <section id="education" class="py-8 sm:py-20 lg:py-24 relative overflow-hidden">
+        <section id="education" class="py-8 sm:py-12 lg:py-16 relative overflow-hidden scroll-mt-20">
             <div class="max-w-4xl mx-auto px-6 sm:px-12 relative z-10">
                 <div class="text-center mb-10 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4"><span class="italic text-brand-terracotta">Education</span> History.</h2>
@@ -267,7 +267,7 @@
         </section>
 
         <!-- Technical Skills -->
-        <section id="skills" class="py-8 sm:py-20 lg:py-24 relative">
+        <section id="skills" class="py-8 sm:py-12 lg:py-16 relative scroll-mt-20">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
                 <div class="text-center mb-10 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4">Core <span class="italic text-brand-terracotta">Skills</span>.</h2>
@@ -285,7 +285,7 @@
         </section>
 
         <!-- Portofolio Project -->
-        <section id="projects" class="py-8 sm:py-20 lg:py-24 relative bg-white/50 backdrop-blur-sm border-y border-brand-latte/30">
+        <section id="projects" class="py-8 sm:py-12 lg:py-16 relative bg-white/50 backdrop-blur-sm border-y border-brand-latte/30 scroll-mt-20">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-6">
                     <div>
@@ -325,7 +325,7 @@
         </section>
 
         <!-- Experience (Org & Volunteer) -->
-        <section id="experience" class="py-8 sm:py-20 lg:py-24 relative">
+        <section id="experience" class="py-8 sm:py-12 lg:py-16 relative scroll-mt-20">
             <div class="max-w-5xl mx-auto px-6 sm:px-12">
                 <div class="text-center mb-6 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4"><span class="italic text-brand-terracotta">Experience</span> & Volunteer.</h2>
@@ -348,7 +348,7 @@
         </section>
 
         <!-- Certificates Section -->
-        <section id="certificates" class="py-8 sm:py-20 lg:py-24 relative bg-white/30 backdrop-blur-sm">
+        <section id="certificates" class="py-8 sm:py-12 lg:py-16 relative bg-white/30 backdrop-blur-sm scroll-mt-20">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
                 <div class="text-center mb-8 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4">My <span class="italic text-brand-terracotta">Certificates</span>.</h2>
@@ -437,7 +437,7 @@
         </section>
 
         <!-- Target Magang -->
-        <section id="targets" class="py-8 sm:py-20 lg:py-24 relative bg-brand-tukucream/50 border-t border-brand-latte/30">
+        <section id="targets" class="py-8 sm:py-12 lg:py-16 relative bg-brand-tukucream/50 border-t border-brand-latte/30 scroll-mt-20">
             <div class="max-w-6xl mx-auto px-6 sm:px-12 relative z-10">
                 <div class="text-center mb-6 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4">Targets After <span class="italic text-brand-terracotta">Internship</span>.</h2>
@@ -469,7 +469,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-8 sm:py-20 lg:py-24 relative overflow-hidden">
+        <section id="contact" class="py-8 sm:py-12 lg:py-16 relative overflow-hidden scroll-mt-20">
             <!-- Background aesthetic -->
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-brand-latte/20 blur-[120px] rounded-full z-[-1]"></div>
             
