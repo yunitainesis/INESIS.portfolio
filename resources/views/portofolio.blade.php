@@ -75,23 +75,33 @@
 
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 z-50 bg-brand-tukucream/98 backdrop-blur-xl translate-x-full transition-all duration-500 ease-in-out xl:hidden flex flex-col invisible opacity-0">
-            <div class="flex flex-col items-center justify-center h-full gap-8 px-6 text-center overflow-y-auto pt-24 pb-12">
-                <a href="#home" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">About</a>
-                <a href="#academic" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Academic Profile</a>
-                <a href="#education" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Education</a>
-                <a href="#skills" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Skills</a>
-                <a href="#projects" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Projects</a>
-                <a href="#experience" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Experience</a>
-                <a href="#certificates" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Certificates</a>
-                <a href="#targets" class="mobile-nav-link text-2xl font-serif font-bold text-brand-espresso hover:text-brand-terracotta transition-colors">Targets</a>
-                <a href="#contact" class="portfolio-btn px-10 py-4 rounded-full text-lg mt-4">Contact Me</a>
+            <div class="flex flex-col items-center justify-between h-full px-8 py-20 overflow-y-auto">
+                <!-- Top Brand Header -->
+                <div class="w-full flex flex-col items-center border-b border-brand-latte/30 pb-4 mb-4">
+                    <span class="text-xl font-serif font-bold text-brand-espresso">Inesis<span class="text-brand-terracotta">.</span></span>
+                    <span class="text-[8px] font-sans font-bold tracking-[0.3em] uppercase text-brand-mocha opacity-70 mt-1">Profile Navigation</span>
+                </div>
 
-                <div class="mt-8 flex gap-6">
+                <!-- Navigation Links -->
+                <div class="flex flex-col items-center gap-3 w-full max-w-[240px]">
+                    <a href="#home" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">About</a>
+                    <a href="#academic" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Academic Profile</a>
+                    <a href="#education" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Education</a>
+                    <a href="#skills" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Skills</a>
+                    <a href="#projects" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Projects</a>
+                    <a href="#experience" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Experience</a>
+                    <a href="#certificates" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Certificates</a>
+                    <a href="#targets" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Targets</a>
+                    <a href="#contact" class="portfolio-btn px-8 py-3 rounded-full text-xs font-bold mt-4 w-full text-center shadow-md">Contact Me</a>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="mt-6 flex gap-6">
                     <a href="https://github.com/yunitainesis" class="text-brand-espresso hover:text-brand-terracotta transition-colors">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
                     </a>
                     <a href="mailto:yunitaines5@gmail.com" class="text-brand-espresso hover:text-brand-terracotta transition-colors">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </a>
                 </div>
             </div>
@@ -101,37 +111,37 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="relative pt-24 pb-12 sm:pt-28 sm:pb-20 lg:pt-40 lg:pb-32 flex items-center min-h-[80vh]">
-            <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 flex flex-col lg:flex-row items-center gap-16 relative z-10 w-full">
-                <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 mb-8 text-brand-terracotta">
-                        <svg class="w-6 h-6 animate-[spin_6s_linear_infinite]" viewBox="0 0 24 24" fill="currentColor">
+            <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 flex flex-row items-center gap-4 sm:gap-12 lg:gap-16 relative z-10 w-full">
+                <div class="w-[55%] lg:w-1/2 flex flex-col items-start text-left">
+                    <div class="inline-flex items-center gap-1.5 mb-4 sm:mb-8 text-brand-terracotta">
+                        <svg class="w-4 h-4 sm:w-6 sm:h-6 animate-[spin_6s_linear_infinite]" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
                         </svg>
-                        <span class="font-serif italic font-bold tracking-widest text-sm text-brand-espresso uppercase">Creative Developer</span>
-                        <svg class="w-6 h-6 animate-[spin_6s_linear_infinite]" viewBox="0 0 24 24" fill="currentColor">
+                        <span class="font-serif italic font-bold tracking-widest text-[9px] sm:text-sm text-brand-espresso uppercase">Creative Developer</span>
+                        <svg class="w-4 h-4 sm:w-6 sm:h-6 animate-[spin_6s_linear_infinite]" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
                         </svg>
                     </div>
-                    <h1 class="text-3xl sm:text-5xl lg:text-7xl font-bold font-serif leading-tight mb-6 text-brand-espresso">
+                    <h1 class="text-xl sm:text-5xl lg:text-7xl font-bold font-serif leading-tight mb-4 sm:mb-6 text-brand-espresso">
                         Hi, I'm <br>
                         <span class="italic text-brand-terracotta">Yunita Inesis Putri Cahyani</span>
                     </h1>
-                    <p class="text-base sm:text-lg text-brand-mocha mb-10 max-w-xl font-medium leading-relaxed">
+                    <p class="text-[10px] sm:text-base lg:text-lg text-brand-mocha mb-6 sm:mb-10 max-w-xl font-medium leading-relaxed">
                         A 4th-semester Software Engineering Technology student at Politeknik Indonusa Surakarta with a deep passion for web and desktop application development. I possess foundational experience in PHP, JavaScript, and Python to build lightweight applications, and I am committed to learning new technologies in an industrial environment.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                        <a href="#projects" class="portfolio-btn inline-flex justify-center items-center px-8 py-4 rounded-full text-base">
+                    <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 w-full sm:w-auto">
+                        <a href="#projects" class="portfolio-btn inline-flex justify-center items-center px-4 py-2 sm:px-8 sm:py-4 rounded-full text-[10px] sm:text-base text-center shadow-md">
                             Explore Projects
                         </a>
-                        <a href="#about" class="inline-flex justify-center items-center px-8 py-4 border border-brand-espresso text-base font-semibold rounded-full text-brand-espresso hover:bg-brand-espresso hover:text-white transition-all shadow-sm hover:shadow-md">
+                        <a href="#about" class="inline-flex justify-center items-center px-4 py-2 sm:px-8 sm:py-4 border border-brand-espresso text-[10px] sm:text-base font-semibold rounded-full text-brand-espresso hover:bg-brand-espresso hover:text-white transition-all shadow-sm hover:shadow-md text-center">
                             More About Me
                         </a>
                     </div>
                 </div>
                 
-                <div class="w-full lg:w-1/2 flex justify-center relative mt-10 lg:mt-0">
+                <div class="w-[45%] lg:w-1/2 flex justify-center relative mt-0">
                     <!-- Modern Aesthetic Photo Display -->
-                    <div class="relative w-64 h-[22rem] sm:w-72 sm:h-[26rem] lg:w-[26rem] lg:h-[30rem] group">
+                    <div class="relative w-full aspect-[4/5] sm:aspect-auto sm:w-72 sm:h-[26rem] lg:w-[26rem] lg:h-[30rem] group">
                         <!-- Aesthetic Blob Background Layer -->
                         <div class="absolute inset-0 bg-brand-latte/50 blob-shape scale-105 blur-sm transition-transform duration-700 group-hover:scale-110"></div>
                         
@@ -149,7 +159,7 @@
                         </div>
 
                         <!-- Floating Badge -->
-                        <div class="portfolio-badge absolute bottom-4 -left-2 sm:-left-4 lg:bottom-10 lg:-left-10 z-20 px-4 py-2.5 sm:px-6 sm:py-4 rounded-2xl sm:rounded-3xl flex items-center gap-3 sm:gap-4 hover:-translate-y-2 transition-transform duration-500 backdrop-blur-md bg-white/90">
+                        <div class="hidden sm:flex portfolio-badge absolute bottom-4 -left-2 sm:-left-4 lg:bottom-10 lg:-left-10 z-20 px-4 py-2.5 sm:px-6 sm:py-4 rounded-2xl sm:rounded-3xl flex items-center gap-3 sm:gap-4 hover:-translate-y-2 transition-transform duration-500 backdrop-blur-md bg-white/90">
                             <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-brand-latte flex items-center justify-center text-brand-terracotta bg-brand-tukucream shadow-sm shrink-0">
                                 <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" /></svg>
                             </div>
@@ -365,21 +375,13 @@
                     <!-- Certificate 1: Peserta Workshop -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
                         <div class="relative h-48 sm:h-64 bg-brand-latte/10 overflow-hidden flex items-center justify-center border-b border-brand-latte/20">
-                            <!-- PDF Preview via Iframe (Desktop Only) -->
-                            <iframe src="{{ asset('assets/img/peserta_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="hidden md:block w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
-                            
-                            <!-- Mobile Fallback (Mobile Only) -->
-                            <div class="md:hidden flex flex-col items-center gap-3 text-brand-espresso/60 py-8">
-                                <svg class="w-16 h-16 text-brand-terracotta/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                                </svg>
-                                <span class="text-xs font-semibold uppercase tracking-wider text-brand-mocha">PDF Certificate</span>
-                            </div>
+                            <!-- PDF Preview via Iframe (Desktop & Mobile) -->
+                            <iframe src="{{ asset('assets/img/peserta_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
                         </div>
                         <div class="p-6 sm:p-8 flex flex-col justify-between flex-grow">
                             <div>
                                 <div class="flex items-center gap-3 mb-4">
-                                    <div class="w-10 h-10 rounded-xl bg-brand-tukucream flex items-center justify-center text-brand-espresso shrink-0">
+                                    <div class="w-10 h-10 rounded-xl bg-brand-tukucream flex items-center justify-center text-brand-espresso shrink-0 border border-brand-latte/30">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                     </div>
                                     <h3 class="text-lg sm:text-xl font-bold font-serif text-brand-espresso leading-snug">Seminar Certificate</h3>
@@ -397,21 +399,13 @@
                     <!-- Certificate 2: Panitia Workshop -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
                         <div class="relative h-48 sm:h-64 bg-brand-latte/10 overflow-hidden flex items-center justify-center border-b border-brand-latte/20">
-                            <!-- PDF Preview via Iframe (Desktop Only) -->
-                            <iframe src="{{ asset('assets/img/panitia_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="hidden md:block w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
-                            
-                            <!-- Mobile Fallback (Mobile Only) -->
-                            <div class="md:hidden flex flex-col items-center gap-3 text-brand-espresso/60 py-8">
-                                <svg class="w-16 h-16 text-brand-terracotta/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                                </svg>
-                                <span class="text-xs font-semibold uppercase tracking-wider text-brand-mocha">PDF Certificate</span>
-                            </div>
+                            <!-- PDF Preview via Iframe (Desktop & Mobile) -->
+                            <iframe src="{{ asset('assets/img/panitia_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
                         </div>
                         <div class="p-6 sm:p-8 flex flex-col justify-between flex-grow">
                             <div>
                                 <div class="flex items-center gap-3 mb-4">
-                                    <div class="w-10 h-10 rounded-xl bg-brand-latte/30 flex items-center justify-center text-brand-espresso shrink-0">
+                                    <div class="w-10 h-10 rounded-xl bg-brand-latte/30 flex items-center justify-center text-brand-espresso shrink-0 border border-brand-latte/30">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                                     </div>
                                     <h3 class="text-lg sm:text-xl font-bold font-serif text-brand-espresso leading-snug">Workshop Committee</h3>
@@ -429,21 +423,13 @@
                     <!-- Certificate 3: Seminar AI USAHID -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
                         <div class="relative h-48 sm:h-64 bg-brand-latte/10 overflow-hidden flex items-center justify-center border-b border-brand-latte/20">
-                            <!-- PDF Preview via Iframe (Desktop Only) -->
-                            <iframe src="{{ asset('assets/img/seminar AI USAHID.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="hidden md:block w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
-                            
-                            <!-- Mobile Fallback (Mobile Only) -->
-                            <div class="md:hidden flex flex-col items-center gap-3 text-brand-espresso/60 py-8">
-                                <svg class="w-16 h-16 text-brand-terracotta/80" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                                </svg>
-                                <span class="text-xs font-semibold uppercase tracking-wider text-brand-mocha">PDF Certificate</span>
-                            </div>
+                            <!-- PDF Preview via Iframe (Desktop & Mobile) -->
+                            <iframe src="{{ asset('assets/img/seminar AI USAHID.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
                         </div>
                         <div class="p-6 sm:p-8 flex flex-col justify-between flex-grow">
                             <div>
                                 <div class="flex items-center gap-3 mb-4">
-                                    <div class="w-10 h-10 rounded-xl bg-brand-terracotta/20 flex items-center justify-center text-brand-espresso shrink-0">
+                                    <div class="w-10 h-10 rounded-xl bg-brand-terracotta/20 flex items-center justify-center text-brand-espresso shrink-0 border border-brand-latte/30">
                                         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                                             <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
                                             <path d="m5 3 1 2.5L8.5 6 6 7 5 9.5 4 7 1.5 6 4 5.5z" />
