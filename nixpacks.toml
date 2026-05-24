@@ -1,7 +1,7 @@
 [phases.install]
 cmds = [
     "composer install --no-dev --optimize-autoloader",
-    "npm install",
+    "npm install --include=optional",
     "chmod -R +x node_modules/.bin",
     "npm run build"
 ]
