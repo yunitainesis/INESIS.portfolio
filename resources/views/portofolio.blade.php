@@ -75,33 +75,33 @@
 
         <!-- Mobile Menu Overlay -->
         <div id="mobile-menu" class="fixed inset-0 z-50 bg-brand-tukucream/98 backdrop-blur-xl translate-x-full transition-all duration-500 ease-in-out xl:hidden flex flex-col invisible opacity-0">
-            <div class="flex flex-col items-center justify-between h-full px-8 py-20 overflow-y-auto">
+            <div class="flex flex-col items-center justify-center h-full px-8 py-6 gap-2 sm:gap-4 overflow-y-auto">
                 <!-- Top Brand Header -->
-                <div class="w-full flex flex-col items-center border-b border-brand-latte/30 pb-4 mb-4">
-                    <span class="text-xl font-serif font-bold text-brand-espresso">Inesis<span class="text-brand-terracotta">.</span></span>
-                    <span class="text-[8px] font-sans font-bold tracking-[0.3em] uppercase text-brand-mocha opacity-70 mt-1">Profile Navigation</span>
+                <div class="w-full flex flex-col items-center border-b border-brand-latte/30 pb-2 mb-2 shrink-0">
+                    <span class="text-lg font-serif font-bold text-brand-espresso">Inesis<span class="text-brand-terracotta">.</span></span>
+                    <span class="text-[7px] font-sans font-bold tracking-[0.2em] uppercase text-brand-mocha opacity-70 mt-0.5">Profile Navigation</span>
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="flex flex-col items-center gap-3 w-full max-w-[240px]">
-                    <a href="#home" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">About</a>
-                    <a href="#academic" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Academic Profile</a>
-                    <a href="#education" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Education</a>
-                    <a href="#skills" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Skills</a>
-                    <a href="#projects" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Projects</a>
-                    <a href="#experience" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Experience</a>
-                    <a href="#certificates" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Certificates</a>
-                    <a href="#targets" class="mobile-nav-link text-sm font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-2 w-full text-center border-b border-brand-latte/15">Targets</a>
-                    <a href="#contact" class="portfolio-btn px-8 py-3 rounded-full text-xs font-bold mt-4 w-full text-center shadow-md">Contact Me</a>
+                <div class="flex flex-col items-center gap-1.5 w-full max-w-[200px] shrink-0">
+                    <a href="#home" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">About</a>
+                    <a href="#academic" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Academic Profile</a>
+                    <a href="#education" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Education</a>
+                    <a href="#skills" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Skills</a>
+                    <a href="#projects" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Projects</a>
+                    <a href="#experience" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Experience</a>
+                    <a href="#certificates" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Certificates</a>
+                    <a href="#targets" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Targets</a>
+                    <a href="#contact" class="portfolio-btn px-6 py-2 rounded-full text-[10px] font-bold mt-2 w-full text-center shadow-sm">Contact Me</a>
                 </div>
 
                 <!-- Social Media Links -->
-                <div class="mt-6 flex gap-6">
+                <div class="mt-2 flex gap-4 shrink-0">
                     <a href="https://github.com/yunitainesis" class="text-brand-espresso hover:text-brand-terracotta transition-colors">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
                     </a>
                     <a href="mailto:yunitaines5@gmail.com" class="text-brand-espresso hover:text-brand-terracotta transition-colors">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </a>
                 </div>
             </div>
@@ -308,31 +308,38 @@
                     </div>
                 </div>
                 
-                <div class="space-y-12 sm:space-y-20 lg:space-y-24">
+                <div class="space-y-8 sm:space-y-10 lg:space-y-12">
                     @foreach($projects as $index => $project)
-                    <div class="flex flex-col {{ $index % 2 != 0 ? 'lg:flex-row-reverse' : 'lg:flex-row' }} gap-12 items-center group">
-                        <div class="w-full lg:w-3/5">
-                            <div class="portfolio-card overflow-hidden border-none shadow-lg">
+                    <div class="portfolio-card bg-white border border-brand-latte/40 shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden group">
+                        <div class="flex flex-col {{ $index % 2 != 0 ? 'lg:flex-row-reverse' : 'lg:flex-row' }} gap-0 items-stretch">
+                            {{-- Project Image --}}
+                            <div class="w-full lg:w-3/5 overflow-hidden">
                                 @if(Str::startsWith($project->image_url, ['http://', 'https://']))
-                                    <img src="{{ $project->image_url }}" alt="{{ $project->title }}" class="w-full h-52 sm:h-72 lg:h-[24rem] object-cover group-hover:scale-105 transition-all duration-700">
+                                    <img src="{{ $project->image_url }}" alt="{{ $project->title }}" class="w-full h-56 sm:h-80 lg:h-full object-cover group-hover:scale-105 transition-all duration-700 min-h-[280px]">
                                 @else
-                                    <img src="{{ asset($project->image_url) }}" alt="{{ $project->title }}" class="w-full h-52 sm:h-72 lg:h-[24rem] object-cover group-hover:scale-105 transition-all duration-700">
+                                    <img src="{{ asset($project->image_url) }}" alt="{{ $project->title }}" class="w-full h-56 sm:h-80 lg:h-full object-cover group-hover:scale-105 transition-all duration-700 min-h-[280px]">
                                 @endif
                             </div>
-                        </div>
-                        <div class="w-full lg:w-2/5 flex flex-col justify-center {{ $index % 2 != 0 ? 'lg:items-end lg:text-right' : '' }}">
-                            <div class="flex gap-2 mb-6">
-                                <span class="px-3 py-1 text-xs font-semibold tracking-wider bg-brand-latte/30 rounded-full text-brand-espresso">{{ $project->category }}</span>
-                                <span class="px-3 py-1 text-xs font-semibold tracking-wider bg-brand-terracotta/10 rounded-full text-brand-terracotta">{{ $project->tech_stack }}</span>
+                            {{-- Project Info --}}
+                            <div class="w-full lg:w-2/5 flex flex-col justify-center p-6 sm:p-8 lg:p-10 {{ $index % 2 != 0 ? 'lg:items-end lg:text-right' : '' }} bg-white relative">
+                                {{-- Subtle accent corner --}}
+                                <div class="absolute top-0 {{ $index % 2 != 0 ? 'left-0' : 'right-0' }} w-20 h-20 bg-brand-tukucream rounded-br-full {{ $index % 2 != 0 ? 'rounded-br-full' : 'rounded-bl-full' }} opacity-50 -z-0 pointer-events-none"></div>
+                                <div class="relative z-10">
+                                    <div class="flex gap-2 mb-4 {{ $index % 2 != 0 ? 'lg:justify-end' : '' }} flex-wrap">
+                                        <span class="px-3 py-1 text-xs font-semibold tracking-wider bg-brand-latte/30 rounded-full text-brand-espresso">{{ $project->category }}</span>
+                                        <span class="px-3 py-1 text-xs font-semibold tracking-wider bg-brand-terracotta/10 rounded-full text-brand-terracotta">{{ $project->tech_stack }}</span>
+                                    </div>
+                                    <div class="w-10 h-1 rounded-full bg-brand-terracotta mb-4 {{ $index % 2 != 0 ? 'lg:ml-auto' : '' }}"></div>
+                                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold font-serif mb-3 text-brand-espresso">{{ $project->title }}</h3>
+                                    <p class="text-brand-mocha mb-6 sm:mb-8 font-medium leading-relaxed text-sm sm:text-base">
+                                        {{ $project->description }}
+                                    </p>
+                                    <a href="{{ $project->github_link ?? '#' }}" target="_blank" class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white border border-brand-latte text-brand-espresso font-bold text-sm hover:bg-brand-espresso hover:text-white transition-all shadow-sm hover:shadow-md">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
+                                        View on GitHub
+                                    </a>
+                                </div>
                             </div>
-                            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold font-serif mb-4 text-brand-espresso">{{ $project->title }}</h3>
-                            <p class="text-brand-mocha mb-6 sm:mb-8 font-medium leading-relaxed text-base sm:text-lg">
-                                {{ $project->description }}
-                            </p>
-                            <a href="{{ $project->github_link ?? '#' }}" target="_blank" class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white border border-brand-latte text-brand-espresso font-bold text-sm hover:bg-brand-espresso hover:text-white transition-all shadow-sm hover:shadow-md group/btn">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
-                                View on GitHub
-                            </a>
                         </div>
                     </div>
                     @endforeach
