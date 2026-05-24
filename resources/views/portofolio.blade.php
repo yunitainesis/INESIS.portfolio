@@ -16,6 +16,9 @@
     
     <!-- External CSS and JS via Vite (Contains Tailwind) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    
+    <!-- PDF.js library for high-quality responsive certificate previews on all devices -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
 </head>
 <body class="antialiased text-brand-espresso selection:bg-brand-terracotta selection:text-white min-h-screen relative overflow-x-hidden">
 
@@ -45,7 +48,7 @@
                     </a>
                 </div>
                 <!-- Nav Links: Desktop -->
-                <div class="hidden xl:flex space-x-6">
+                <div class="hidden lg:flex space-x-6">
                     <a href="#home" class="nav-link text-sm font-medium hover:text-brand-terracotta transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-terracotta after:transition-all hover:after:w-full">About</a>
                     <a href="#academic" class="nav-link text-sm font-medium hover:text-brand-terracotta transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-terracotta after:transition-all hover:after:w-full">Academic Profile</a>
                     <a href="#education" class="nav-link text-sm font-medium hover:text-brand-terracotta transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-terracotta after:transition-all hover:after:w-full">Education</a>
@@ -55,12 +58,12 @@
                     <a href="#certificates" class="nav-link text-sm font-medium hover:text-brand-terracotta transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-terracotta after:transition-all hover:after:w-full">Certificates</a>
                     <a href="#targets" class="nav-link text-sm font-medium hover:text-brand-terracotta transition-all relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-terracotta after:transition-all hover:after:w-full">Targets</a>
                 </div>
-                <div class="hidden xl:flex">
+                <div class="hidden lg:flex">
                     <a href="#contact" class="portfolio-btn px-6 py-2.5 rounded-full text-sm">Contact Me</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="xl:hidden flex items-center p-2 text-brand-espresso hover:text-brand-terracotta transition-colors z-[60]">
+                <button id="mobile-menu-btn" class="lg:hidden flex items-center p-2 text-brand-espresso hover:text-brand-terracotta transition-colors z-[60]">
                     <!-- Hamburger Icon -->
                     <svg id="menu-icon" class="w-8 h-8 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -73,36 +76,19 @@
             </div>
         </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 z-50 bg-brand-tukucream/98 backdrop-blur-xl translate-x-full transition-all duration-500 ease-in-out xl:hidden flex flex-col invisible opacity-0">
-            <div class="flex flex-col items-center justify-center h-full px-8 py-6 gap-2 sm:gap-4 overflow-y-auto">
-                <!-- Top Brand Header -->
-                <div class="w-full flex flex-col items-center border-b border-brand-latte/30 pb-2 mb-2 shrink-0">
-                    <span class="text-lg font-serif font-bold text-brand-espresso">Inesis<span class="text-brand-terracotta">.</span></span>
-                    <span class="text-[7px] font-sans font-bold tracking-[0.2em] uppercase text-brand-mocha opacity-70 mt-0.5">Profile Navigation</span>
-                </div>
-
-                <!-- Navigation Links -->
-                <div class="flex flex-col items-center gap-1.5 w-full max-w-[200px] shrink-0">
-                    <a href="#home" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">About</a>
-                    <a href="#academic" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Academic Profile</a>
-                    <a href="#education" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Education</a>
-                    <a href="#skills" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Skills</a>
-                    <a href="#projects" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Projects</a>
-                    <a href="#experience" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Experience</a>
-                    <a href="#certificates" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Certificates</a>
-                    <a href="#targets" class="mobile-nav-link text-xs font-sans font-semibold text-brand-espresso/80 hover:text-brand-terracotta hover:scale-105 transition-all duration-300 py-1.5 w-full text-center border-b border-brand-latte/10">Targets</a>
-                    <a href="#contact" class="portfolio-btn px-6 py-2 rounded-full text-[10px] font-bold mt-2 w-full text-center shadow-sm">Contact Me</a>
-                </div>
-
-                <!-- Social Media Links -->
-                <div class="mt-2 flex gap-4 shrink-0">
-                    <a href="https://github.com/yunitainesis" class="text-brand-espresso hover:text-brand-terracotta transition-colors">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"></path></svg>
-                    </a>
-                    <a href="mailto:yunitaines5@gmail.com" class="text-brand-espresso hover:text-brand-terracotta transition-colors">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    </a>
+        <!-- Mobile Menu Dropdown Window -->
+        <div id="mobile-menu" class="absolute top-20 right-6 w-64 bg-white/95 backdrop-blur-md border border-brand-latte/30 rounded-2xl shadow-xl p-5 transition-all duration-300 transform scale-95 opacity-0 pointer-events-none z-50 lg:hidden">
+            <div class="flex flex-col gap-3">
+                <a href="#home" class="mobile-nav-link text-sm font-semibold text-brand-espresso hover:text-brand-terracotta transition-colors py-1 w-full border-b border-brand-latte/10">About</a>
+                <a href="#academic" class="mobile-nav-link text-sm font-semibold text-brand-espresso hover:text-brand-terracotta transition-colors py-1 w-full border-b border-brand-latte/10">Academic Profile</a>
+                <a href="#education" class="mobile-nav-link text-sm font-semibold text-brand-espresso hover:text-brand-terracotta transition-colors py-1 w-full border-b border-brand-latte/10">Education</a>
+                <a href="#skills" class="mobile-nav-link text-sm font-semibold text-brand-espresso hover:text-brand-terracotta transition-colors py-1 w-full border-b border-brand-latte/10">Skills</a>
+                <a href="#projects" class="mobile-nav-link text-sm font-semibold text-brand-espresso hover:text-brand-terracotta transition-colors py-1 w-full border-b border-brand-latte/10">Projects</a>
+                <a href="#experience" class="mobile-nav-link text-sm font-semibold text-brand-espresso hover:text-brand-terracotta transition-colors py-1 w-full border-b border-brand-latte/10">Experience</a>
+                <a href="#certificates" class="mobile-nav-link text-sm font-semibold text-brand-espresso hover:text-brand-terracotta transition-colors py-1 w-full border-b border-brand-latte/10">Certificates</a>
+                <a href="#targets" class="mobile-nav-link text-sm font-semibold text-brand-espresso hover:text-brand-terracotta transition-colors py-1 w-full border-b border-brand-latte/10">Targets</a>
+                <div class="pt-2">
+                    <a href="#contact" class="portfolio-btn block w-full text-center px-4 py-2 rounded-full text-xs font-bold shadow-sm">Contact Me</a>
                 </div>
             </div>
         </div>
@@ -110,7 +96,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="relative pt-24 pb-12 sm:pt-28 sm:pb-20 lg:pt-40 lg:pb-32 flex items-center min-h-[80vh]">
+        <section id="home" class="relative pt-20 pb-8 sm:pt-28 sm:pb-20 lg:pt-40 lg:pb-32 flex items-center min-h-[80vh]">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 flex flex-row items-center gap-4 sm:gap-12 lg:gap-16 relative z-10 w-full">
                 <div class="w-[55%] lg:w-1/2 flex flex-col items-start text-left">
                     <div class="inline-flex items-center gap-1.5 mb-4 sm:mb-8 text-brand-terracotta">
@@ -174,7 +160,7 @@
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="py-12 sm:py-20 lg:py-24 relative">
+        <section id="about" class="py-8 sm:py-20 lg:py-24 relative">
             <div class="max-w-4xl mx-auto px-6 sm:px-12 text-center">
                 <h3 class="text-xl sm:text-3xl md:text-5xl font-serif font-bold text-brand-espresso leading-tight mb-8">
                     \"I believe in blending <span class="italic text-brand-terracotta">aesthetic design</span> with robust engineering to create meaningful digital experiences.\"
@@ -186,9 +172,9 @@
         </section>
 
         <!-- Academic Profile -->
-        <section id="academic" class="py-12 sm:py-20 lg:py-24 relative bg-white/50 backdrop-blur-sm border-y border-brand-latte/30">
+        <section id="academic" class="py-8 sm:py-20 lg:py-24 relative bg-white/50 backdrop-blur-sm border-y border-brand-latte/30">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
-                <div class="mb-10 sm:mb-16 text-center lg:text-left">
+                <div class="mb-6 sm:mb-16 text-center lg:text-left">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4"><span class="italic text-brand-terracotta">Academic</span> Profile.</h2>
                     <p class="text-brand-mocha max-w-2xl font-medium">My current academic journey and core details.</p>
                 </div>
@@ -249,7 +235,7 @@
         </section>
 
         <!-- Education History -->
-        <section id="education" class="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
+        <section id="education" class="py-8 sm:py-20 lg:py-24 relative overflow-hidden">
             <div class="max-w-4xl mx-auto px-6 sm:px-12 relative z-10">
                 <div class="text-center mb-10 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4"><span class="italic text-brand-terracotta">Education</span> History.</h2>
@@ -281,7 +267,7 @@
         </section>
 
         <!-- Technical Skills -->
-        <section id="skills" class="py-12 sm:py-20 lg:py-24 relative">
+        <section id="skills" class="py-8 sm:py-20 lg:py-24 relative">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
                 <div class="text-center mb-10 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4">Core <span class="italic text-brand-terracotta">Skills</span>.</h2>
@@ -299,7 +285,7 @@
         </section>
 
         <!-- Portofolio Project -->
-        <section id="projects" class="py-12 sm:py-20 lg:py-24 relative bg-white/50 backdrop-blur-sm border-y border-brand-latte/30">
+        <section id="projects" class="py-8 sm:py-20 lg:py-24 relative bg-white/50 backdrop-blur-sm border-y border-brand-latte/30">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 gap-6">
                     <div>
@@ -339,9 +325,9 @@
         </section>
 
         <!-- Experience (Org & Volunteer) -->
-        <section id="experience" class="py-12 sm:py-20 lg:py-24 relative">
+        <section id="experience" class="py-8 sm:py-20 lg:py-24 relative">
             <div class="max-w-5xl mx-auto px-6 sm:px-12">
-                <div class="text-center mb-10 sm:mb-16">
+                <div class="text-center mb-6 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4"><span class="italic text-brand-terracotta">Experience</span> & Volunteer.</h2>
                     <p class="text-brand-mocha font-medium">My active involvement in organizations and community events.</p>
                 </div>
@@ -362,19 +348,20 @@
         </section>
 
         <!-- Certificates Section -->
-        <section id="certificates" class="py-12 sm:py-20 lg:py-24 relative bg-white/30 backdrop-blur-sm">
+        <section id="certificates" class="py-8 sm:py-20 lg:py-24 relative bg-white/30 backdrop-blur-sm">
             <div class="max-w-7xl mx-auto px-6 sm:px-12 lg:px-20">
-                <div class="text-center mb-16">
+                <div class="text-center mb-8 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4">My <span class="italic text-brand-terracotta">Certificates</span>.</h2>
                     <p class="text-brand-mocha font-medium">Recognition and participation in professional development.</p>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
                     <!-- Certificate 1: Peserta Workshop -->
+                    <!-- Certificate 1: Peserta Workshop -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
                         <div class="relative h-48 sm:h-64 bg-brand-latte/10 overflow-hidden flex items-center justify-center border-b border-brand-latte/20">
-                            <!-- PDF Preview via Iframe (Desktop & Mobile) -->
-                            <iframe src="{{ asset('assets/img/peserta_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
+                            <!-- Responsive Canvas PDF Preview (renders beautifully on mobile & desktop) -->
+                            <canvas data-pdf="{{ asset('assets/img/peserta_workshop.pdf') }}" class="pdf-canvas w-full h-full object-contain pointer-events-none"></canvas>
                         </div>
                         <div class="p-6 sm:p-8 flex flex-col justify-between flex-grow">
                             <div>
@@ -397,8 +384,8 @@
                     <!-- Certificate 2: Panitia Workshop -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
                         <div class="relative h-48 sm:h-64 bg-brand-latte/10 overflow-hidden flex items-center justify-center border-b border-brand-latte/20">
-                            <!-- PDF Preview via Iframe (Desktop & Mobile) -->
-                            <iframe src="{{ asset('assets/img/panitia_workshop.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
+                            <!-- Responsive Canvas PDF Preview (renders beautifully on mobile & desktop) -->
+                            <canvas data-pdf="{{ asset('assets/img/panitia_workshop.pdf') }}" class="pdf-canvas w-full h-full object-contain pointer-events-none"></canvas>
                         </div>
                         <div class="p-6 sm:p-8 flex flex-col justify-between flex-grow">
                             <div>
@@ -421,8 +408,8 @@
                     <!-- Certificate 3: Seminar AI USAHID -->
                     <div class="portfolio-card overflow-hidden bg-white border border-brand-latte/30 shadow-sm hover:shadow-xl transition-all duration-500 group flex flex-col h-full">
                         <div class="relative h-48 sm:h-64 bg-brand-latte/10 overflow-hidden flex items-center justify-center border-b border-brand-latte/20">
-                            <!-- PDF Preview via Iframe (Desktop & Mobile) -->
-                            <iframe src="{{ asset('assets/img/seminar AI USAHID.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-fit') }}" class="w-full h-full border-none pointer-events-none" loading="lazy" scrolling="no"></iframe>
+                            <!-- Responsive Canvas PDF Preview (renders beautifully on mobile & desktop) -->
+                            <canvas data-pdf="{{ asset('assets/img/seminar AI USAHID.pdf') }}" class="pdf-canvas w-full h-full object-contain pointer-events-none"></canvas>
                         </div>
                         <div class="p-6 sm:p-8 flex flex-col justify-between flex-grow">
                             <div>
@@ -450,9 +437,9 @@
         </section>
 
         <!-- Target Magang -->
-        <section id="targets" class="py-12 sm:py-20 lg:py-24 relative bg-brand-tukucream/50 border-t border-brand-latte/30">
+        <section id="targets" class="py-8 sm:py-20 lg:py-24 relative bg-brand-tukucream/50 border-t border-brand-latte/30">
             <div class="max-w-6xl mx-auto px-6 sm:px-12 relative z-10">
-                <div class="text-center mb-10 sm:mb-16">
+                <div class="text-center mb-6 sm:mb-16">
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4">Targets After <span class="italic text-brand-terracotta">Internship</span>.</h2>
                     <p class="text-brand-mocha font-medium max-w-xl mx-auto">Projects I aim to build and implement applying my internship experience.</p>
                 </div>
@@ -482,7 +469,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-12 sm:py-20 lg:py-24 relative overflow-hidden">
+        <section id="contact" class="py-8 sm:py-20 lg:py-24 relative overflow-hidden">
             <!-- Background aesthetic -->
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-brand-latte/20 blur-[120px] rounded-full z-[-1]"></div>
             
@@ -543,34 +530,70 @@
                 }, 3000);
             }
 
-            // Mobile Menu Toggle
+             // Mobile Menu Toggle
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
             const closeIcon = document.getElementById('close-icon');
             const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-            const toggleMenu = () => {
-                const isOpen = !mobileMenu.classList.contains('translate-x-full');
+            const toggleMenu = (e) => {
+                if (e) e.stopPropagation();
+                const isOpen = mobileMenu.classList.contains('opacity-100');
                 if (isOpen) {
-                    mobileMenu.classList.add('translate-x-full', 'invisible', 'opacity-0');
+                    mobileMenu.classList.add('scale-95', 'opacity-0', 'pointer-events-none');
+                    mobileMenu.classList.remove('scale-100', 'opacity-100');
                     menuIcon.classList.remove('hidden');
                     menuIcon.classList.add('block');
                     closeIcon.classList.add('hidden');
                     closeIcon.classList.remove('block');
-                    document.body.style.overflow = '';
                 } else {
-                    mobileMenu.classList.remove('translate-x-full', 'invisible', 'opacity-0');
+                    mobileMenu.classList.remove('scale-95', 'opacity-0', 'pointer-events-none');
+                    mobileMenu.classList.add('scale-100', 'opacity-100');
                     menuIcon.classList.add('hidden');
                     menuIcon.classList.remove('block');
                     closeIcon.classList.remove('hidden');
                     closeIcon.classList.add('block');
-                    document.body.style.overflow = 'hidden';
                 }
             };
 
             mobileMenuBtn?.addEventListener('click', toggleMenu);
             mobileNavLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+            // Close mobile menu if clicked outside
+            document.addEventListener('click', (e) => {
+                if (mobileMenu && !mobileMenu.classList.contains('pointer-events-none')) {
+                    if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                        toggleMenu();
+                    }
+                }
+            });
+
+            // PDF.js Rendering logic for responsive certificate previews
+            const pdfjsLib = window['pdfjs-dist/build/pdf'];
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+            document.querySelectorAll('.pdf-canvas').forEach(canvas => {
+                const pdfUrl = canvas.getAttribute('data-pdf');
+                if (!pdfUrl) return;
+
+                pdfjsLib.getDocument(pdfUrl).promise.then(pdf => {
+                    return pdf.getPage(1);
+                }).then(page => {
+                    const viewport = page.getViewport({ scale: 1.2 });
+                    const context = canvas.getContext('2d');
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+                    const renderContext = {
+                        canvasContext: context,
+                        viewport: viewport
+                    };
+                    page.render(renderContext);
+                }).catch(error => {
+                    console.error('Error rendering PDF:', error);
+                });
+            });
 
             // ScrollSpy Logic
             const sections = document.querySelectorAll('section');
